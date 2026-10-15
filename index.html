@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sumant Tiwari Portfolio</title>
-<meta name="description" content="Sumant Tiwari — medical imaging AI researcher. Radiomics, foundation models and health informatics projects, posters and code.">
-<meta property="og:title" content="Sumant Tiwari · Medical Imaging AI Portfolio">
-<meta property="og:description" content="Sumant Tiwari — medical imaging AI researcher. Radiomics, foundation models and health informatics projects, posters and code.">
+<meta name="description" content="Sumant Tiwari: medical imaging AI and EHR/health informatics. Radiomics, foundation models, rad-path correlation, FHIR/HL7 projects, posters and code.">
+<meta property="og:title" content="Sumant Tiwari · Medical Imaging AI and Health Informatics">
+<meta property="og:description" content="Sumant Tiwari: medical imaging AI and EHR/health informatics. Radiomics, foundation models, rad-path correlation, FHIR/HL7 projects, posters and code.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sumanttiwari732.github.io/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23141a20'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23f0a14a' stroke-width='3'/%3E%3C/svg%3E">
@@ -42,7 +42,9 @@ h1{font-size:clamp(40px,7vw,68px);font-weight:800;font-stretch:78%;letter-spacin
 .role{font-size:20px;max-width:62ch;color:var(--fg)}
 .role b{font-weight:600}
 .contact{display:flex;flex-wrap:wrap;gap:10px 22px;font-family:var(--mono);font-size:14px;color:var(--muted)}
-.contact span{user-select:all}
+.contact .ci{display:inline-flex;gap:8px;align-items:baseline;min-width:0;overflow-wrap:anywhere}
+.contact .ck{color:var(--muted);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase}
+.contact a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
 .focus{display:flex;flex-wrap:wrap;gap:8px}
 .chip{font-family:var(--mono);font-size:12.5px;padding:4px 10px;border:1px solid var(--line);border-radius:3px;background:var(--surface);color:var(--fg)}
 /* sections */
@@ -102,23 +104,23 @@ footer{font-family:var(--mono);font-size:12px;color:var(--muted);border-top:1px 
 <div class="wrap">
 
 <header>
-  <div class="avail"><span class="status live">Open to work</span><span class="status live">Open to relocation</span><span class="label">Full-time · from January 2027</span></div>
-  <span class="label">Portfolio · Medical imaging AI · Health informatics</span>
+  <div class="avail"><span class="status live">Open to work</span><span class="status live">Willing to relocate anywhere in the US</span><span class="label">Full-time · from January 2027</span></div>
+  <span class="label">Medical Imaging AI · EHR &amp; Health Informatics</span>
   <h1>Sumant Tiwari</h1>
-  <p class="role">Dentist turned imaging AI researcher. I build and validate machine learning models on <b>MRI, CT and histopathology</b> for genitourinary cancer, with a clinician's eye for what a model should actually answer.</p>
+  <p class="role">Dentist and health informatics graduate working where imaging AI meets clinical data. I build and validate machine learning models on <b>MRI, CT and histopathology</b>, and I move clinical data between systems with <b>FHIR, HL7 v2 and standard terminologies</b>.</p>
   <div class="contact">
-    <span>sumantt95@gmail.com</span>
-    <a href="https://www.linkedin.com/in/drsumantratiwari/">linkedin.com/in/drsumantratiwari</a>
-    <a href="https://github.com/Sumanttiwari732">github.com/Sumanttiwari732</a>
-    <span>Indianapolis, IN · open to relocation anywhere in the US or remote</span>
+    <span class="ci"><span class="ck">Email</span><a href="mailto:sumantt95@gmail.com">sumantt95@gmail.com</a></span>
+    <span class="ci"><span class="ck">LinkedIn</span><a href="https://www.linkedin.com/in/drsumantratiwari/">linkedin.com/in/drsumantratiwari</a></span>
+    <span class="ci"><span class="ck">GitHub</span><a href="https://github.com/Sumanttiwari732">github.com/Sumanttiwari732</a></span>
+    <span>Based in Indianapolis, IN</span>
   </div>
   <div class="focus">
-    <span class="chip">Radiomics</span><span class="chip">CT foundation models</span><span class="chip">nnU-Net segmentation</span><span class="chip">Nested CV &amp; statistics</span><span class="chip">HIPAA-aware data security</span><span class="chip">Clinician–engineer bridge</span>
+    <span class="chip">Radiomics</span><span class="chip">CT foundation models</span><span class="chip">nnU-Net segmentation</span><span class="chip">Nested CV &amp; statistics</span><span class="chip">Rad-path correlation</span><span class="chip">EHR data &amp; FHIR / HL7</span><span class="chip">SNOMED CT → ICD-10</span><span class="chip">HIPAA-aware data security</span>
   </div>
 </header>
 
 <section id="projects">
-  <div class="sec-head"><h2>Research projects</h2><span class="label">4 projects</span></div>
+  <div class="sec-head"><h2>Medical imaging AI</h2><span class="label">4 projects</span></div>
 
   <article class="study">
     <div class="strip"><span class="status done">Completed</span><span>Modality <b>MRI T2W</b></span><span>Task <b>seminoma vs non-seminoma</b></span><span>Truth <b>histopathology</b></span></div>
@@ -146,17 +148,18 @@ footer{font-family:var(--mono);font-size:12px;color:var(--muted);border-top:1px 
   </article>
 
   <article class="study">
-    <div class="strip"><span class="status live">Ongoing</span><span>Modality <b>CT</b></span><span>Cohort <b>UL n=14 · BL n=34</b></span><span>Endpoint <b>relapse ≤ 24 mo</b></span></div>
+    <div class="strip"><span class="status live">Ongoing</span><span>Modality <b>CT + histopathology</b></span><span>Cohort <b>UL n=14 · BL n=34</b></span><span>Endpoint <b>relapse ≤ 24 mo</b></span></div>
     <div class="study-body">
       <h3>Predicting relapse after primary RPLND in low-volume seminoma</h3>
-      <p>Can pre-surgery CT predict which low-volume seminoma patients (largest node ≤ 3 cm) relapse after retroperitoneal lymph node dissection? I annotate the scans and run frozen foundation-model encoders against radiomics and CNN baselines.</p>
+      <p>Can pre-surgery CT predict which low-volume seminoma patients (largest node ≤ 3 cm) relapse after retroperitoneal lymph node dissection? I annotate the scans, correlate CT findings with RPLND pathology, and run frozen foundation-model encoders against radiomics and CNN baselines.</p>
       <ul>
+        <li>Radiology–pathology correlation: matching pre-RPLND CT nodal findings to histopathology from the dissected lymph nodes</li>
         <li>RadFM and CT-FM embeddings → fold-local PCA → logistic regression, patient-level nested cross-validation</li>
         <li>Clinical + imaging fusion models; radiomics and CNN as comparators</li>
         <li>Feature extraction on IU's Quartz HPC cluster with Slurm batch jobs</li>
         <li>Manuscript in preparation</li>
       </ul>
-      <div class="tags"><span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">RadFM</span><span class="tag">CT-FM</span><span class="tag">scikit-learn</span><span class="tag">Slurm/HPC</span></div>
+      <div class="tags"><span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">RadFM</span><span class="tag">CT-FM</span><span class="tag">Rad-path correlation</span><span class="tag">scikit-learn</span><span class="tag">Slurm/HPC</span></div>
       <div class="links"><span>Lab code, shared with PI permission</span><a href="https://shiradkar.lab.iu.edu/">AIMed Lab →</a></div>
       
     </div>
@@ -193,7 +196,7 @@ footer{font-family:var(--mono);font-size:12px;color:var(--muted);border-top:1px 
 </section>
 
 <section id="other">
-  <div class="sec-head"><h2>Clinical data science and interoperability</h2><span class="label">4 projects</span></div>
+  <div class="sec-head"><h2>EHR, interoperability and clinical data</h2><span class="label">4 projects</span></div>
   <div class="grid2">
     <article class="study">
       <div class="strip"><span class="status done">Completed</span><span>Data <b>SEER 2010–2021</b></span></div>
@@ -271,8 +274,8 @@ footer{font-family:var(--mono);font-size:12px;color:var(--muted);border-top:1px 
 <section id="education">
   <div class="sec-head"><h2>Education</h2></div>
   <div class="xp">
-    <div class="xp-row"><span class="when">Jan 2025 – Dec 2026</span><div><h3>MS Health Informatics · Luddy School, IU Indianapolis</h3></div></div>
-    <div class="xp-row"><span class="when">—</span><div><h3>BDS · D.Y. Patil, Pune</h3></div></div>
+    <div class="xp-row"><span class="when">Jan 2025 – Dec 2026</span><div><h3>Master of Science (MS) in Health Informatics</h3><p>Luddy School of Informatics, Computing, and Engineering, Indiana University Indianapolis, IN, USA</p></div></div>
+    <div class="xp-row"><span class="when">Dental degree</span><div><h3>Bachelor of Dental Surgery (BDS)</h3><p>D.Y. Patil, Pune, India</p></div></div>
   </div>
 </section>
 
